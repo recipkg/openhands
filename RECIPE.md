@@ -5,14 +5,14 @@ format = "recipkg/1"
 
 [package]
 name = "openhands"
-version = "0.1.4"
+version = "0.1.5"
 kind = "software"
 description = "面向软件开发 Agent 的自托管控制界面配方草案。"
 entry = "BUILD_PROMPT.md"
 
 [dependencies.agent]
 git = "https://github.com/recipkg/openhands-agent-sdk.git"
-rev = "b1d7fe22ae1cb916f1b5658f6be06623ded1e7a0"
+rev = "20c45822620057980e8995e6a22024d43624e235"
 
 [dependencies.design]
 git = "https://github.com/recipkg/design-directions.git"
