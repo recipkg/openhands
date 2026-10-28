@@ -13,7 +13,7 @@
 
 ## 依赖合同
 
-`agent` 是软件 Agent SDK/服务端草案的固定版本，描述会话、工具、工作区和事件等能力；其中 `SESSION-SOCKET-OBSERVED.md` 描述 Canvas 源码使用的会话端点与隔离服务样本，`PROJECT-SKILLS-OBSERVED.md` 描述特定本地 SDK 技能加载和调用样本。构建时将其作为后端能力及验收输入，不假定 Canvas 的所有后端、UI 和权限与该本地样本相同；特别是技能调用可能执行内联命令，需按实际后端验证。该依赖不完整，不能充当 Canvas 互操作、兼容或安全证明。`design` 提供界面方向和无障碍基础；模型与供应商、身份凭据、外部集成及运行环境是独立前提。Automation Server、第三方 Agent、客户端 SDK 的完整配方仍缺失。
+`agent` 是软件 Agent SDK/服务端草案的固定版本，描述会话、工具、工作区和事件等能力；其中 `SESSION-SOCKET-OBSERVED.md` 描述 Canvas 源码使用的会话端点与隔离服务样本，`PROJECT-SKILLS-OBSERVED.md` 描述特定本地 SDK 技能加载及模拟模型调用样本。构建时将其作为后端能力及验收输入，不假定 Canvas 的所有后端、UI 和权限与该本地样本相同；特别是技能调用可能执行内联命令且重复产生副作用，需按实际后端验证。该依赖不完整，不能充当 Canvas 互操作、兼容或安全证明。`design` 提供界面方向和无障碍基础；模型与供应商、身份凭据、外部集成及运行环境是独立前提。Automation Server、第三方 Agent、客户端 SDK 的完整配方仍缺失。
 
 ## 验收
 
