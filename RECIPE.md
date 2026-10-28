@@ -5,7 +5,7 @@ format = "recipkg/1"
 
 [package]
 name = "openhands"
-version = "0.1.5"
+version = "0.1.6"
 kind = "software"
 description = "面向软件开发 Agent 的自托管控制界面配方草案。"
 entry = "BUILD_PROMPT.md"

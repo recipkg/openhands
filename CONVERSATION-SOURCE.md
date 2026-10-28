@@ -1,6 +1,6 @@
 # Canvas 会话主流程：源码提取
 
-以下来自 [OpenHands Agent Canvas 固定提交 `17af119c331a87e881417e4afe95f83dd3c5cb2c`](https://github.com/OpenHands/OpenHands/tree/17af119c331a87e881417e4afe95f83dd3c5cb2c) 的前端源码和测试设计，**未运行 Canvas 或浏览器**。关联服务端实测在 `agent` 依赖的 `SESSION-SOCKET-OBSERVED.md`；两者合起来也不证明跨仓库兼容。云端、代理和 ACP 仍须分别实测。
+以下来自 [OpenHands Agent Canvas 固定提交 `17af119c331a87e881417e4afe95f83dd3c5cb2c`](https://github.com/OpenHands/OpenHands/tree/17af119c331a87e881417e4afe95f83dd3c5cb2c) 的前端源码和测试设计，**未运行此固定提交的 Canvas 构建**。相近提交的上游发布包浏览器观察另见 `BROWSER-OBSERVED.md`；关联服务端实测在 `agent` 依赖的 `SESSION-SOCKET-OBSERVED.md`，这些样本不证明完整跨仓库兼容。云端、代理和 ACP 仍须分别实测。
 
 ## 启动与会话入口
 
