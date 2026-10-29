@@ -2,7 +2,7 @@
 
 ## 目标与范围
 
-提供面向软件开发 Agent 的控制界面，让用户设置执行后端、工作区、模型并启动和观察会话。固定版本 README 称 Canvas 支持连接不同 Agent Server、本地或容器后端，也可通过 Agent Client Protocol 使用第三方 Agent；不同模式的具体行为和完整协议尚待提取。主流程源码见 `CONVERSATION-SOURCE.md`；相近但并非相同提交的上游发布包浏览器样本见 `BROWSER-OBSERVED.md`，尚未独立重建 Canvas。
+提供面向软件开发 Agent 的控制界面，让用户设置执行后端、工作区、模型并启动和观察会话。固定版本 README 称 Canvas 支持连接不同 Agent Server、本地或容器后端，也可通过 Agent Client Protocol 使用第三方 Agent；不同模式的具体行为和完整协议尚待提取。主流程源码见 `CONVERSATION-SOURCE.md`；上游固定源码的认证错误浏览器样本见 `AUTH-ERROR-BROWSER-OBSERVED.md`，不同提交的发布包样本见 `BROWSER-OBSERVED.md`；尚未独立重建 Canvas。
 
 ## 用户任务
 
@@ -10,7 +10,7 @@
 - 支持配置和切换不同 Agent 后端。本地无沙箱执行会让 Agent 获取宿主文件系统权限；容器模式的具体挂载、边界及会话数据持久化须根据配置和实际运行验证，不能宣称容器自动解决安全问题。
 - 上游说明可通过自动化服务使用定时或 webhook 来调度任务并连接第三方系统；自动化服务是独立仓库，不在 `agent` 配方里。定时策略、事件去重、连接器、授权及完整调度功能目前未提炼，不能宣称已支持。
 - 管理界面应根据实际任务设计信息层级，明确执行、等待、错误与权限状态；复用 `design` 及其递归基础合同。外观与功能均需实测。
-- `agent` 的 `FAILURE-RECOVERY-OBSERVED.md` 提供模拟模型认证错误及本机会话恢复的有限后端证据；界面如何呈现错误、恢复状态和先前工具结果尚未对照 Canvas，需补充实际界面行为及验收，不把 SDK 的样本当作 UI 已通过。
+- 按 `AUTH-ERROR-BROWSER-OBSERVED.md` 的范围呈现认证失败状态、先前终端结果和恢复后的会话历史，并对照 `agent` 的 `FAILURE-RECOVERY-OBSERVED.md` 核对服务端两条错误事件。该样本使用模拟模型并仅覆盖一个工具，不证明重复调用去重或全部错误界面。
 
 ## 依赖合同
 

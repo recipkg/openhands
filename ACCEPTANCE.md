@@ -10,6 +10,6 @@
 
 7. 若支持项目技能，结合 `agent` 的 `PROJECT-SKILLS-OBSERVED.md`，在隔离工作区分别检查实际后端的技能发现、禁用、模型驱动调用及重复副作用，并检查界面呈现与后端结果一致。SDK 的模拟模型样本不证明 Canvas 技能界面、真实模型或完整工具调用已通过。
 
-8. 按 `agent` 的 `FAILURE-RECOVERY-OBSERVED.md` 构造模拟认证失败，结合实际服务端接口检查界面错误与恢复，以及先前工具结果是否正确呈现。SDK 的本地 Python 会话样本不证明 Canvas 错误界面或服务端恢复通过；未提炼协议时先补合同。
+8. 按 `agent` 的 `FAILURE-RECOVERY-OBSERVED.md` 构造模拟认证失败，结合实际服务端接口检查界面错误与恢复，以及先前工具结果是否正确呈现。固定 Canvas 源码的局部上游观察见 `AUTH-ERROR-BROWSER-OBSERVED.md`，独立重建验收仍未执行；核对服务端两条错误事件，不以单条友好提示推断所有详情已脱敏。
 
 对适用的 Agent 界面，按设计依赖的 `AGENT-INTERACTION.md` 用真实后端或明确标记的隔离测试环境检查主任务、状态、错误、恢复和不同视口；区分未运行的 UI 验收与配方归档检查。
